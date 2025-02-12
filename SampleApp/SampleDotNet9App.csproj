@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomTasks\CustomTasks.csproj" />
+  </ItemGroup>
+
+  <UsingTask TaskName="CustomTasks.LogMessageTask" AssemblyFile="..\CustomTasks\bin\Debug\net9.0\CustomTasks.dll" />
+
+  <Target Name="CustomTask" AfterTargets="AfterBuild" Condition="'$(MSBuildRuntimeType)'=='Core'">
+    <Message Importance="high" Text="Running custom MSBuild task..." />
+    <CustomTasks.LogMessageTask />
+  </Target>
+
+</Project>

@@ -1,0 +1,11 @@
+Assembly Attributes: 
+[System.Runtime.CompilerServices.CompilationRelaxationsAttribute((Int32)8)]
+[System.Runtime.CompilerServices.RuntimeCompatibilityAttribute(WrapNonExceptionThrows = True)]
+[System.Diagnostics.DebuggableAttribute((System.Diagnostics.DebuggableAttribute+DebuggingModes)263)]
+[System.Runtime.Versioning.TargetFrameworkAttribute(".NETCoreApp,Version=v9.0", FrameworkDisplayName = ".NET 9.0")]
+[System.Reflection.AssemblyCompanyAttribute("SampleDotNet9App")]
+[System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+[System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[System.Reflection.AssemblyProductAttribute("SampleDotNet9App")]
+[System.Reflection.AssemblyTitleAttribute("SampleDotNet9App")]
